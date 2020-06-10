@@ -1,0 +1,22 @@
+{
+  "name": "@sudoo/eslint-config",
+  "version": "0.0.0",
+  "description": ":dizzy: ESlint config for TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudoDotDog/Sudoo-ESlint-Config.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SudoDotDog/Sudoo-ESlint-Config/issues"
+  },
+  "homepage": "https://github.com/SudoDotDog/Sudoo-ESlint-Config#readme"
+}
