@@ -1,8 +1,15 @@
 {
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
         }
     },
     "plugins": [
@@ -10,6 +17,7 @@
     ],
     "extends": [
         "eslint:recommended",
+        "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking"
     ],
@@ -56,6 +64,20 @@
                 "accessibility": "explicit"
             }
         ],
+        "@typescript-eslint/explicit-module-boundary-types": [
+            "error",
+            {
+                "allowedNames": [
+                    "render",
+                    "componentDidMount",
+                    "componentWillUnmount"
+                ],
+                "allowArgumentsExplicitlyTypedAsAny": true,
+                "allowDirectConstAssertionInArrowFunctions": true,
+                "allowHigherOrderFunctions": true,
+                "allowTypedFunctionExpressions": true
+            }
+        ],
         "@typescript-eslint/indent": "off",
         "@typescript-eslint/member-ordering": [
             "error",
@@ -97,6 +119,7 @@
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-for-in-array": "error",
+        "@typescript-eslint/no-inferrable-types": "off",
         "@typescript-eslint/no-magic-numbers": [
             "error",
             {
@@ -149,8 +172,10 @@
         "@typescript-eslint/no-parameter-properties": "off",
         "@typescript-eslint/no-require-imports": "error",
         "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unused-expressions": "error",
         "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/no-use-before-define": "off",
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/prefer-for-of": "error",
@@ -158,6 +183,15 @@
         "@typescript-eslint/prefer-namespace-keyword": "error",
         "@typescript-eslint/quotes": "off",
         "@typescript-eslint/restrict-plus-operands": "error",
+        "@typescript-eslint/restrict-template-expressions": [
+            "error",
+            {
+                "allowNumber": true,
+                "allowBoolean": true,
+                "allowAny": true,
+                "allowNullish": true
+            }
+        ],
         "@typescript-eslint/triple-slash-reference": [
             "error",
             {
@@ -166,8 +200,19 @@
                 "lib": "always"
             }
         ],
+        "@typescript-eslint/unbound-method": [
+            "warn",
+            {
+                "ignoreStatic": true
+            }
+        ],
         "@typescript-eslint/unified-signatures": "error",
-        "camelcase": "error",
+        "camelcase": [
+            "error",
+            {
+                "properties": "never"
+            }
+        ],
         "complexity": "off",
         "constructor-super": "error",
         "curly": "error",
@@ -207,9 +252,10 @@
         "no-duplicate-case": "error",
         "no-duplicate-imports": "error",
         "no-empty": "error",
+        "no-extra-boolean-cast": "off",
         "no-eval": "error",
         "no-fallthrough": "error",
-        "no-invalid-this": "error",
+        "no-invalid-this": "warn",
         "no-magic-numbers": "off",
         "no-multiple-empty-lines": "off",
         "no-new-wrappers": "error",
@@ -240,6 +286,12 @@
         "prefer-const": "error",
         "quote-props": "off",
         "radix": "error",
+        "react/display-name": [
+            "warn",
+            {
+                "ignoreTranspilerName": true
+            }
+        ],
         "space-before-function-paren": "off",
         "spaced-comment": [
             "error",
