@@ -5,6 +5,7 @@
         "Unmount",
         "WMXPY",
         "camelcase",
+        "codecov",
         "cond",
         "eqeqeq",
         "isnan",
