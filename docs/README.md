@@ -4,3 +4,23 @@
 [![downloads](https://img.shields.io/npm/dm/@sudoo/eslint-config.svg)](https://www.npmjs.com/package/@sudoo/eslint-config)
 
 :dizzy: ESlint config for TypeScript
+
+## Install
+
+```sh
+yarn add @sudoo/eslint-config --dev
+# Or
+npm install @sudoo/eslint-config --save-dev
+```
+
+## Usage
+
+In your .eslintrc.json
+
+```json
+{
+    "extends": [
+        "@sudoo/eslint-config"
+    ]
+}
+```
