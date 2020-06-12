@@ -154,6 +154,7 @@
                     1000,
                     1024,
                     2048,
+                    4096,
                     10000
                 ]
             }
@@ -246,7 +247,7 @@
         "no-extra-boolean-cast": "off",
         "no-eval": "error",
         "no-fallthrough": "error",
-        "no-invalid-this": "warn",
+        "no-invalid-this": "off",
         "no-magic-numbers": "off",
         "no-multiple-empty-lines": "off",
         "no-new-wrappers": "error",
