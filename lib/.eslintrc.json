@@ -208,6 +208,10 @@
         "complexity": "off",
         "constructor-super": "error",
         "curly": "error",
+        "eol-last": [
+            "error",
+            "always"
+        ],
         "eqeqeq": [
             "error",
             "always"
