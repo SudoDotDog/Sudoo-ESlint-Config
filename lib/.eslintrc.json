@@ -18,8 +18,16 @@
                 "*.test.js",
                 "*.test.ts",
                 "*.test.jsx",
-                "*.test.tsx"
-            ]
+                "*.test.tsx",
+                "*.spec.js",
+                "*.spec.ts",
+                "*.spec.jsx",
+                "*.spec.tsx"
+            ],
+            "rules": {
+                "@typescript-eslint/no-unused-expressions": "off",
+                "no-unused-expressions": "off"
+            }
         }
     ],
     "rules": {
