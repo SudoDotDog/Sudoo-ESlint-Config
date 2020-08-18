@@ -199,6 +199,7 @@
         "@typescript-eslint/prefer-function-type": "error",
         "@typescript-eslint/prefer-namespace-keyword": "error",
         "@typescript-eslint/quotes": "off",
+        "@typescript-eslint/require-await": "off",
         "@typescript-eslint/restrict-plus-operands": "error",
         "@typescript-eslint/restrict-template-expressions": [
             "error",
@@ -308,6 +309,7 @@
         "prefer-const": "error",
         "quote-props": "off",
         "radix": "error",
+        "require-await": "off",
         "space-before-function-paren": "off",
         "spaced-comment": [
             "error",
