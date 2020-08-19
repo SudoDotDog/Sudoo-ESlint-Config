@@ -210,6 +210,10 @@
                 "allowNullish": true
             }
         ],
+        "@typescript-eslint/semi": [
+            "error",
+            "always"
+        ],
         "@typescript-eslint/triple-slash-reference": [
             "error",
             {
@@ -310,6 +314,7 @@
         "quote-props": "off",
         "radix": "error",
         "require-await": "off",
+        "semi": "off",
         "space-before-function-paren": "off",
         "spaced-comment": [
             "error",
