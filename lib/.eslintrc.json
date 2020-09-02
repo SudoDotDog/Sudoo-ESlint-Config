@@ -299,12 +299,7 @@
         "no-multiple-empty-lines": "off",
         "no-new-wrappers": "error",
         "no-null/no-null": "off",
-        "no-shadow": [
-            "error",
-            {
-                "hoist": "all"
-            }
-        ],
+        "no-shadow": "off",
         "no-throw-literal": "error",
         "no-trailing-spaces": [
             "error",
