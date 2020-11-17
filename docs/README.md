@@ -7,6 +7,8 @@
 
 ## Install
 
+This package is automatically includes within `@sudoo/triforce`.
+
 ```sh
 yarn add @sudoo/eslint-config --dev
 # Or
