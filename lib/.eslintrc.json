@@ -121,7 +121,6 @@
                     "private-instance-field",
                     "public-abstract-field",
                     "protected-abstract-field",
-                    "private-abstract-field",
                     "public-constructor",
                     "protected-constructor",
                     "private-constructor",
@@ -132,8 +131,7 @@
                     "protected-instance-method",
                     "private-instance-method",
                     "public-abstract-method",
-                    "protected-abstract-method",
-                    "private-abstract-method"
+                    "protected-abstract-method"
                 ]
             }
         ],
